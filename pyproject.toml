@@ -1,0 +1,20 @@
+[project]
+name = "github-actions-testing-ci-pipeline"
+version = "1.0.0"
+description = "A beginner-friendly Python project for learning automated testing and CI."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = []
+license = "MIT"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
